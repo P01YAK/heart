@@ -1,4 +1,7 @@
-var renderer = new THREE.WebGLRenderer({ antialias: true })
+var renderer = new THREE.WebGLRenderer({
+	antialias: true,
+	preserveDrawingBuffer: true,
+})
 renderer.setSize(window.innerWidth, window.innerHeight)
 
 if (window.innerWidth > 800) {

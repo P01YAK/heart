@@ -6,23 +6,54 @@ body {
 	cursor: crosshair;
 }
 
+html,
+body {
+	overflow: hidden;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#background {
+	background: transparent;
+	height: 100vh;
+	top: 0px;
+	position: fixed;
+	z-index: 1;
+}
+
+/* canvas {
+	background: transparent;
+	height: 100vh;
+	top: 0px;
+	position: fixed;
+	z-index: 2;
+} */
+
+.particles-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
 p {
 	color: rgba(255, 255, 255, 0.7);
 	filter: drop-shadow(0px 0px 10px);
 }
 
-.header{
+.header {
 	top: 42%;
 }
 
-.disable-selection{
+.disable-selection {
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-webkit-touch-callout: none;
 }
 
-h1::after{
+h1::after {
 	content: ' P01YAK';
 	font-size: 12px;
 	position: absolute;
@@ -33,6 +64,6 @@ h1::after{
 	filter: drop-shadow(0px 0px 10px);
 }
 
-h1{
+h1 {
 	filter: drop-shadow(0px 0px 10px);
 }
